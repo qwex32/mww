@@ -307,7 +307,7 @@
 
       const newTodo = prompt(message + "\n➕ 새 할 일 추가:");
       if (newTodo && newTodo.trim() !== "") {
-        const due = prompt("📌 마감 날짜를 YYYY-MM-DD 형식으로 입력하세요:", date);
+        const due = prompt("📌 마감 날짜를 YYYY-MM-DD 형식으로 입력:", date);
         if (!todos[date]) todos[date] = [];
         todos[date].push({ text: newTodo.trim(), due: due.trim(), done: false });
         saveTodos();
